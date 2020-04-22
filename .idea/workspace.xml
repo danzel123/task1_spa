@@ -20,18 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="075a2f29-9f77-46d8-b91d-e56ec88d9fe0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/autorization.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Auth.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AuthOk.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +49,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1at3sFZXTkFWmzqVf1Xibg2GH9y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,6 +64,14 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mrfis\Documents\Programming\education\react\task1_spa\src" />
+      <recent name="C:\Users\mrfis\Documents\Programming\education\react\task1_spa\src\components" />
+      <recent name="C:\Users\mrfis\Documents\Programming\education\react\task1_spa\src\containers" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -65,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587541267994</updated>
-      <workItem from="1587541270910" duration="908000" />
+      <workItem from="1587541270910" duration="11676000" />
     </task>
     <servers />
   </component>
@@ -84,9 +102,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587541392647">
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587542805341">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1587541392647" />
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1587542805341" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1587543320924">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587543320924" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587542562756">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1587542562756" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1587545162935">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1587545162935" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587546438974">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587546438974" />
   </component>
 </project>
