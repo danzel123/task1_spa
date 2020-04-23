@@ -2,8 +2,8 @@
 //начальное состояние
 const initialState = {
     isAuth: false,
-    login: "a",
-    password: '1',
+    login: "login",
+    password: '12345',
     activeItemMenu: 'home'
 }
 //создаем сам редуктор
