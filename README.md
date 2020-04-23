@@ -4,7 +4,7 @@
 * react-router
 
 #### Auth data
->login: login
+>login: login  
 >password: 12345
 
 ## created by Denis Krivoshapko
