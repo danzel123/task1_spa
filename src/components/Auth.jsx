@@ -1,7 +1,8 @@
 import React from "react";
 import * as PropTypes from "prop-types";
 import "./Auth.css"
-import {Redirect} from "react-router";
+
+//Дид маунты для испрвления бага с некоректной активной ссылкой
 
 export class AuthForm extends React.Component {
     constructor(props) {
@@ -10,9 +11,10 @@ export class AuthForm extends React.Component {
             login: '',
             password: '',
         };
-        this.onChangeLogin = this.onChangeLogin.bind(this);
-        this.onChangePassword = this.onChangePassword.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
+    }
+
+    componentDidMount() {
+        this.props.changeItem('auth')
     }
 
     onChangePassword(e) {
@@ -24,19 +26,17 @@ export class AuthForm extends React.Component {
     }
 
     onSubmit(e) {
-
         this.props.checkAuth(this.state.login, this.state.password)
-        //return                     <Redirect push to="/home" />
     }
     render() {
             return (
                 <div className={"content-box"}>
-                    <form onSubmit={this.onSubmit} method="GET">
+                    <form onSubmit={this.onSubmit.bind(this)} method="GET">
                         <h2>Форма входа</h2>
                         <label>Логин<input type="login" name="login" id="login" value={this.state.login}
-                               onChange={this.onChangeLogin}/></label>
+                               onChange={this.onChangeLogin.bind(this)}/></label>
                         <label>Пароль<input type="password" name="password" id="password" value={this.state.password}
-                               onChange={this.onChangePassword}/></label>
+                               onChange={this.onChangePassword.bind(this)}/></label>
                         <button type="submit">Ок</button>
                     </form>
 
