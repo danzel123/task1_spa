@@ -1,6 +1,7 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import {checkAuth} from "../actions/autorization";
+import "./Auth.css"
+import {Redirect} from "react-router";
 
 export class AuthForm extends React.Component {
     constructor(props) {
@@ -25,17 +26,21 @@ export class AuthForm extends React.Component {
     onSubmit(e) {
 
         this.props.checkAuth(this.state.login, this.state.password)
-
+        //return                     <Redirect push to="/home" />
     }
     render() {
             return (
-                <form onSubmit={this.onSubmit}>
-                    <input type="login" name="login" id="login" value={this.state.login}
-                           onChange={this.onChangeLogin}/>
-                    <input type="password" name="password" id="password" value={this.state.password}
-                           onChange={this.onChangePassword}/>
-                    <button type="submit">Ок</button>
-                </form>
+                <div className={"content-box"}>
+                    <form onSubmit={this.onSubmit} method="GET">
+                        <h2>Форма входа</h2>
+                        <label>Логин<input type="login" name="login" id="login" value={this.state.login}
+                               onChange={this.onChangeLogin}/></label>
+                        <label>Пароль<input type="password" name="password" id="password" value={this.state.password}
+                               onChange={this.onChangePassword}/></label>
+                        <button type="submit">Ок</button>
+                    </form>
+
+                </div>
             )
         }
 }

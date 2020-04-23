@@ -1,11 +1,16 @@
 import React from "react";
+import "./Auth.css"
 
-export const Home = () =>{
-    return(
-        <h2>
-            Вы уже авторизованы
-        </h2>
-    )
+export class AuthOk extends React.Component {
+    render() {
+        console.log(this.props.logOff)
+        return (
+            <div className={"content-box"}>
+                <button onClick={this.props.logOff}>Выйти</button>
+            </div>
+        )
+    }
 }
 
-export default Home
+
+export default AuthOk

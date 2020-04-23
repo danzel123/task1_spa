@@ -15,6 +15,11 @@ export default (state = initialState, action) => {
                 ...state,
                 isAuth: state.login === action.payload.login && state.password === action.payload.password,
             }
+        case "LOG_OFF":
+            return {
+                ...state,
+                isAuth: false,
+            }
         default:
             return state;
     }
