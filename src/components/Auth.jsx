@@ -26,12 +26,17 @@ export class AuthForm extends React.Component {
     }
 
     onSubmit(e) {
-        this.props.checkAuth(this.state.login, this.state.password)
+        if (this.props.login === this.state.login && this.props.password === this.state.password){
+            this.props.checkAuth(this.state.login, this.state.password)
+        }else{
+            alert('Неверный ввод')
+        }
+
     }
     render() {
             return (
                 <div className={"content-box"}>
-                    <form onSubmit={this.onSubmit.bind(this)} method="GET">
+                    <form onSubmit={this.onSubmit.bind(this)}>
                         <h2>Форма входа</h2>
                         <label>Логин<input type="login" name="login" id="login" value={this.state.login}
                                onChange={this.onChangeLogin.bind(this)}/></label>
